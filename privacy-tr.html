@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walletude Gizlilik Politikası</title>
+<meta name="description" content="Walletude kişisel finans uygulamasının verilerinizi nasıl işlediği.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="index.html">Walletude</a>
+  <nav><a href="privacy-tr.html">Gizlilik</a><a href="support.html">Destek</a><a href="privacy.html" hreflang="en">English</a></nav>
+</header>
+
+<h1>Gizlilik Politikası</h1>
+<p class="meta">Yürürlük tarihi: 10 Ekim 2026</p>
+
+<div class="card">
+  <strong>Kısaca:</strong> Walletude’da hesap, reklam ve takip yoktur. İşlemleriniz, tutarlarınız, notlarınız ve şifreniz
+  cihazınızda kalır. Cihazdan çıkan tek veriler, uygulama çökerse gönderilen anonim çökme raporu, kişisel veri
+  içermeyen döviz kuru istekleri ve — yalnızca Bulut Yedeği'ni açarsanız — kendi iCloud Drive veya Google Drive'ınızdaki,
+  bizim erişemediğimiz yedek kopyadır.
+</div>
+
+<p>Bu politika, iOS ve Android için Walletude uygulamasının (“Walletude”, “uygulama”, “biz”) bilgileri nasıl işlediğini açıklar.
+Walletude, Alper Bağlı tarafından geliştirilmektedir; aşağıda açıklanan sınırlı veriler için veri sorumlusu odur.
+Bu metin 6698 sayılı KVKK kapsamındaki aydınlatma yükümlülüğü amacıyla da hazırlanmıştır.</p>
+
+<h2>1. Yalnızca cihazınızda saklanan veriler</h2>
+<ul>
+  <li><strong>Finansal kayıtlar</strong> — gelir ve gider kayıtları, tutarlar, para birimleri, kategoriler, tarihler ve notlar.
+    Cihazınızda uygulamanın özel alanında, sistemin depolama şifrelemesiyle (iOS Veri Koruması; Android dosya tabanlı şifreleme) saklanır.</li>
+  <li><strong>Şifre</strong> — uygulama kilidini açarsanız 4 haneli şifrenizin yalnızca tuzlanmış özeti (hash) ve isteğe bağlı
+    ipucunuz iOS Anahtar Zinciri’nde veya Android’de Android Keystore’daki bir anahtarla şifrelenerek tutulur. Şifrenizi görmeyiz ve hiçbir yere göndermeyiz.</li>
+  <li><strong>Ayarlar</strong> — tema, dil, tercih edilen para birimi gibi tercihler.</li>
+  <li><strong>Kur önbelleği</strong> — çevrimdışı çalışabilmek için indirilen döviz kurları.</li>
+</ul>
+<p>Bu verileri alan bir sunucumuz yoktur ve bu verilere erişemeyiz. iPhone’da, diğer uygulama verileri gibi kendi
+iCloud veya bilgisayar yedeklerinize dahil olabilir; bu yedekler Apple’ın koşullarına ve sizin yedekleme ayarlarınıza tabidir.
+Android’de Walletude verilerini Google’ın otomatik yedeklemesi ve cihaz aktarımı dışında tutar; veriler cihazdan yalnızca
+uygulamada sizin oluşturduğunuz yedek dosyasıyla veya Bulut Yedeği ile (aşağıya bakın) çıkar.</p>
+
+<h2>2. Cihazdan çıkan veriler</h2>
+<p>Huawei AppGallery üzerinden dağıtılan Android sürümünde çökme raporlama ve Bulut Yedeği bulunmaz; bu sürümde cihazdan çıkan tek veri, aşağıda açıklanan döviz kuru istekleridir.</p>
+<p><strong>Çökme ve teşhis raporları.</strong> Walletude, hataları bulup düzeltmek için Firebase Crashlytics (Google LLC) kullanır.
+Uygulama çöktüğünde veya beklenmeyen bir hata oluştuğunda; hata izi (stack trace), cihaz modeli, işletim sistemi sürümü, uygulama sürümü,
+boş bellek/depolama alanı ve uygulama için üretilen rastgele bir kurulum kimliği gibi teknik bilgiler içeren bir rapor gönderilir.
+Raporlar hiçbir zaman işlemlerinizi, tutarlarınızı, notlarınızı, ipucunuzu veya şifrenizi içermez. Bu veriler kimliğinizle
+ilişkilendirilmez, reklam veya takip için kullanılmaz ve Crashlytics tarafından en fazla 90 gün saklanır.
+Ayrıntılar: <a href="https://firebase.google.com/support/privacy">Firebase gizlilik bilgileri</a>.
+İşlemenin hukuki sebebi, uygulamanın düzgün çalışmasını sağlamaya yönelik meşru menfaattir.</p>
+<p><strong>Bulut Yedeği (isteğe bağlı, varsayılan olarak kapalı).</strong> Ayarlar'da Bulut Yedeği'ni açarsanız uygulama,
+bütün Walletude verilerinizi içeren bir yedek dosyasını (elle alınan yedekle aynı içerik: işlemler, tutarlar, notlar, birikim hedefleri,
+bütçeler, tekrarlayan ödemeler, hesaplar, kategoriler ve ana para biriminiz; şifreniz ve ipucunuz asla) kendi bulut alanınıza kaydeder:
+iPhone'da iCloud Drive'ınızdaki özel bir Walletude klasörüne (Apple), Android'de Google Drive'ınızın gizli uygulama verisi klasörüne (Google).
+Uygulama bu klasöre yalnızca sizin verdiğiniz izinle erişir; klasör diğer uygulamalara görünmez. Dosya, bir değişiklikten sonra
+uygulamadan çıktığınızda güncellenir ve yalnızca geri yüklemeyi seçtiğinizde okunur. Bu dosyaya erişimimiz yoktur; hesabınız için
+Apple'ın veya Google'ın koşullarına göre saklanır ve korunur. Bulut Yedeği'ni kapatmak yeni yüklemeleri durdurur; saklanan kopyayı
+iCloud ayarlarından (Saklama Alanını Yönet) veya Android'de Google Drive ayarlarından (Uygulamaları yönet → Walletude → Gizli uygulama
+verilerini sil) silebilirsiniz.</p>
+<p><strong>Döviz kurları.</strong> Tutarları para birimleri arasında çevirmek için uygulama, herkese açık referans kurları
+(Avrupa Merkez Bankası verileri) Frankfurter API’den (<a href="https://frankfurter.dev">frankfurter.dev</a>) indirir.
+Bu istekler yalnızca bir tarih veya tarih aralığı içerir ve sizinle ilişkilendirilmez. Her internet isteğinde olduğu gibi
+servis IP adresinizi görebilir.</p>
+
+<h2>3. Toplamadığımız veriler</h2>
+<p>Hesap veya üyelik yoktur; ad, e-posta, telefon, rehber, konum, fotoğraf, sağlık verisi veya banka bilgisi toplanmaz.
+Reklam, analiz SDK’sı, reklam kimliği (IDFA / Android Reklam Kimliği) ve uygulamalar arası takip yoktur; kişisel veri satmayız veya paylaşmayız.</p>
+
+<h2>4. Dışa aktarma ve paylaşma</h2>
+<p>“Verileri dışa aktar (CSV)” seçeneğini kullanırsanız uygulama cihazınızda bir dosya oluşturur ve sistemin paylaşım ekranını açar.
+Dosyanın nereye gideceği (Dosyalar, Mail, başka bir uygulama) tamamen sizin seçiminizdir ve o hedefin koşullarına tabidir.</p>
+
+<h2>5. Seçimleriniz ve haklarınız</h2>
+<ul>
+  <li>Uygulamadaki her kaydı istediğiniz zaman görüntüleyebilir, düzenleyebilir ve silebilirsiniz.</li>
+  <li>Kilit ekranındaki “Walletude’u Sıfırla” (şifre açıkken) veya uygulamayı silmek, verilerini cihazınızdan kaldırır (kendi yedeklerinizdeki kopyalar yedekleme ayarlarınıza tabidir).</li>
+  <li>Çökme raporları sizinle ilişkilendirilmediği için belirli bir kişiye ait raporları genellikle tespit edemeyiz.
+    Yine de KVKK md. 11 ve GDPR gibi mevzuattan doğan taleplerinizi (bilgi alma, düzeltme, silme, itiraz) bize iletebilir,
+    Kişisel Verileri Koruma Kurumu’na veya bulunduğunuz ülkenin veri koruma otoritesine şikâyette bulunabilirsiniz.</li>
+</ul>
+
+<h2>6. Çocuklar</h2>
+<p>Walletude 13 yaş altındaki çocuklara yönelik değildir ve bilerek çocuklardan kişisel veri toplamaz.</p>
+
+<h2>7. Yurt dışına aktarım</h2>
+<p>Çökme raporları ve açtıysanız bulut yedekleri Google (iCloud için Apple) tarafından, ABD dahil yurt dışındaki sunucularda, Google’ın veri işleme koşulları ve
+güvenceleri kapsamında işlenebilir.</p>
+
+<h2>8. Değişiklikler</h2>
+<p>Uygulamalarımız değişirse bu sayfayı ve yukarıdaki yürürlük tarihini güncelleriz. Önemli değişiklikler uygulamanın
+sürüm notlarında da belirtilir.</p>
+
+<h2>9. İletişim</h2>
+<p>Soru ve talepleriniz için: <a href="mailto:walletude1@gmail.com">walletude1@gmail.com</a></p>
+
+<footer>© 2026 Walletude</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Walletude Privacy Policy</title>
+<meta name="description" content="How the Walletude personal finance app handles your data.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="index.html">Walletude</a>
+  <nav><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="privacy-tr.html" hreflang="tr">Türkçe</a></nav>
+</header>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Effective date: October 10, 2026</p>
+
+<div class="card">
+  <strong>In short:</strong> Walletude has no accounts, no ads and no tracking. Your transactions,
+  amounts, notes and passcode stay on your device. The only data that leaves the device is an
+  anonymous crash report (if the app crashes), exchange-rate requests that contain no personal data and — only if you
+  turn on Cloud Backup — a backup copy in your own iCloud Drive or Google Drive, which we cannot access.
+</div>
+
+<p>This policy explains how the Walletude app for iOS and Android (“Walletude”, “the app”, “we”) handles information.
+Walletude is developed by Alper Bağlı, who is the data controller for the limited data described below.</p>
+
+<h2>1. Data stored only on your device</h2>
+<ul>
+  <li><strong>Financial records</strong> — income and expense entries, amounts, currencies, categories, dates and notes.
+    They are saved in the app’s private storage on your device, protected by the system’s storage encryption (iOS Data Protection; Android file-based encryption).</li>
+  <li><strong>Passcode</strong> — if you enable the app lock, only a salted hash of your 4-digit passcode and your optional hint
+    are kept in the iOS Keychain or, on Android, encrypted with a key in the Android Keystore. We never see or transmit your passcode.</li>
+  <li><strong>Settings</strong> — theme, language, preferred currency and similar preferences.</li>
+  <li><strong>Exchange-rate cache</strong> — downloaded currency rates, kept to work offline.</li>
+</ul>
+<p>We do not operate servers that receive this data and we cannot access it. On iPhone, like other app data, it may be included in
+your own iCloud or computer backups, which are governed by Apple’s terms and your backup settings. On Android, Walletude excludes its
+data from Google’s automatic backup and device transfer; it only leaves the device in a backup file you create yourself in the app
+or through Cloud Backup (see below).</p>
+
+<h2>2. Data that leaves your device</h2>
+<p>The Android version distributed through Huawei AppGallery contains neither crash reporting nor Cloud Backup; there, the only data that leaves your device is the exchange-rate requests described below.</p>
+<p><strong>Crash and diagnostic reports.</strong> Walletude uses Firebase Crashlytics (Google LLC) to find and fix crashes.
+When the app crashes or hits an unexpected error, a report is sent containing technical information such as the stack trace,
+device model, operating system version, app version, free memory/disk space and a random installation identifier generated for the app.
+Reports never contain your transactions, amounts, notes, hint or passcode. This data is not linked to your identity,
+not used for advertising or tracking, and is retained by Crashlytics for up to 90 days.
+See <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+<p><strong>Cloud Backup (optional, off by default).</strong> If you turn on Cloud Backup in Settings, the app saves a backup file
+with all your Walletude data (the same content as a manual backup: transactions, amounts, notes, savings goals, budgets,
+recurring payments, accounts, categories and your preferred currency; never your passcode or hint) to your own cloud storage:
+on iPhone, a private Walletude folder in your iCloud Drive (Apple); on Android, the hidden app-data folder of your Google Drive (Google),
+which the app accesses only with the permission you grant and which is not visible to other apps. The file is updated when you leave
+the app after a change, and is read only when you choose to restore. We have no access to it; it is stored and protected under
+Apple’s or Google’s terms for your account. Turning Cloud Backup off stops new uploads; you can delete the stored copy from your iCloud
+settings (Manage Storage) or, on Android, from Google Drive settings (Manage apps → Walletude → Delete hidden app data).</p>
+<p><strong>Exchange rates.</strong> To convert amounts between currencies, the app downloads public reference rates
+(European Central Bank data) from the Frankfurter API (<a href="https://frankfurter.dev">frankfurter.dev</a>).
+These requests contain only a date or date range and are not linked to you. As with any internet request,
+the service can see your IP address.</p>
+
+<h2>3. Data we do not collect</h2>
+<p>No account or sign-up, no name, email, phone number, contacts, location, photos, health data or bank credentials.
+No advertising, no analytics SDKs, no advertising identifier (IDFA / Android Advertising ID), no cross-app tracking, and we do not sell or share personal data.</p>
+
+<h2>4. Exporting and sharing</h2>
+<p>If you choose “Export data (CSV)”, the app creates a file on your device and opens the system share sheet.
+Where that file goes (e.g. Files, Mail, another app) is entirely your choice and is handled by that destination.</p>
+
+<h2>5. Your choices and rights</h2>
+<ul>
+  <li>You can view, edit and delete any entry in the app at any time.</li>
+  <li>“Reset Walletude” on the lock screen (when the passcode is on) or deleting the app removes its data from your device (copies in your own backups follow your backup settings).</li>
+  <li>Because crash reports are not linked to you, we generally cannot identify reports belonging to a specific person.
+    You can still contact us with any request under applicable laws such as the GDPR or Türkiye’s KVKK
+    (access, correction, deletion, objection), and you may lodge a complaint with your local data protection authority.</li>
+</ul>
+
+<h2>6. Children</h2>
+<p>Walletude is not directed at children under 13 and does not knowingly collect personal data from children.</p>
+
+<h2>7. International transfers</h2>
+<p>Crash reports, and cloud backups if you turn them on, are processed by Google (or, for iCloud, Apple) on servers that may be located outside your country, including the United States,
+under Google’s data processing terms and safeguards.</p>
+
+<h2>8. Changes</h2>
+<p>We will update this page if our practices change and revise the effective date above. Material changes will also be
+noted in the app’s release notes.</p>
+
+<h2>9. Contact</h2>
+<p>Questions or requests: <a href="mailto:walletude1@gmail.com">walletude1@gmail.com</a></p>
+
+<footer>© 2026 Walletude</footer>
+</main>
+</body>
+</html>
