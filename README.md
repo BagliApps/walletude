@@ -1,9 +1,9 @@
 # Walletude — website
 
 Public pages for the Walletude personal finance app (iOS and Android), served with GitHub Pages at
-https://walletude.github.io
+https://bagliapps.github.io/walletude/
 
-- [Privacy Policy](https://walletude.github.io/privacy.html) · [Gizlilik Politikası](https://walletude.github.io/privacy-tr.html)
-- [Support](https://walletude.github.io/support.html)
+- [Privacy Policy](https://bagliapps.github.io/walletude/privacy.html) · [Gizlilik Politikası](https://bagliapps.github.io/walletude/privacy-tr.html)
+- [Support](https://bagliapps.github.io/walletude/support.html)
 
 Contact: walletude1@gmail.com
