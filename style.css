@@ -46,3 +46,18 @@ p, li { color: var(--text); }
 }
 a { color: var(--accent); }
 footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+
+/* landing */
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.lang { display: flex; gap: 4px; }
+.lang button { font: inherit; font-size: 14px; padding: 4px 12px; border: 1px solid var(--border); background: var(--surface); color: var(--text); border-radius: 999px; cursor: pointer; }
+.lang button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.hero { display: flex; align-items: center; gap: 16px; margin-bottom: 8px; }
+.hero img { width: 72px; height: 72px; border-radius: 16px; }
+.video { display: block; width: 100%; max-width: 280px; margin: 24px auto; border-radius: 16px; border: 1px solid var(--border); background: #000; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; margin: 16px 0; padding: 0; list-style: none; }
+.shots img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); display: block; }
+.shots figcaption { font-size: 14px; color: var(--muted); margin-top: 6px; text-align: center; }
+.shots figure { margin: 0; }
+.features li { margin: 6px 0; }
+[hidden] { display: none !important; }

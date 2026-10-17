@@ -5,18 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Walletude</title>
 <meta name="description" content="Walletude — simple, private personal finance for iPhone and Android.">
+<link rel="icon" href="img/icon.jpg">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<header><a class="brand" href="index.html">Walletude</a></header>
-<h1>Walletude</h1>
-<p>Simple, private income and expense tracking for iPhone and Android. Multi-currency, no accounts, no ads.</p>
+<header class="top">
+  <a class="brand" href="index.html">Walletude</a>
+  <div class="lang" role="group" aria-label="Language / Dil">
+    <button type="button" data-set="en" aria-pressed="true">English</button>
+    <button type="button" data-set="tr" aria-pressed="false">Türkçe</button>
+  </div>
+</header>
+
+<div class="hero">
+  <img src="img/icon.jpg" alt="" width="72" height="72">
+  <div>
+    <h1>Walletude</h1>
+    <p class="meta" data-l="en">Personal finance for iPhone and Android</p>
+    <p class="meta" data-l="tr" hidden>iPhone ve Android için kişisel finans</p>
+  </div>
+</div>
+
+<p data-l="en">Simple, private income and expense tracking for iPhone and Android. Multi-currency, no accounts, no ads.</p>
+<p data-l="tr" hidden>iPhone ve Android için sade ve gizli gelir-gider takibi. Çoklu para birimi, hesap yok, reklam yok.</p>
+
+<video class="video" controls playsinline preload="none" poster="video/poster-en.jpg" src="video/preview-en.mp4" id="vid" aria-label="Walletude app preview"></video>
+
+<h2 data-l="en">Features</h2><h2 data-l="tr" hidden>Özellikler</h2>
+<ul class="features" data-l="en">
+  <li><b>Income &amp; expenses</b> — add entries in seconds, by category, in any currency.</li>
+  <li><b>Month by month</b> — every screen is filtered by month and year, with a clear summary and chart.</li>
+  <li><b>Budgets</b> — monthly limits per category, with an alert near the limit.</li>
+  <li><b>Savings goals</b> — track progress toward a trip, an emergency fund or a new laptop.</li>
+  <li><b>Recurring payments</b> — rent, subscriptions and bills with optional reminders.</li>
+  <li><b>Accounts &amp; net worth</b> — cash, bank and card accounts, transfers and debts.</li>
+  <li><b>Reports</b> — yearly and monthly trends, category changes, PDF export.</li>
+  <li><b>Multi-currency</b> — converted with the European Central Bank rate of the transaction date.</li>
+  <li><b>Backup &amp; CSV</b> — backup to your own iCloud Drive / Google Drive, CSV import and export.</li>
+  <li>Dark mode and 27 languages.</li>
+</ul>
+<ul class="features" data-l="tr" hidden>
+  <li><b>Gelir ve gider</b> — kayıtları saniyeler içinde, kategoriye ve istediğin para birimine göre ekle.</li>
+  <li><b>Ay ay</b> — her ekran ay ve yıla göre süzülür; net bir özet ve grafik.</li>
+  <li><b>Bütçeler</b> — kategori başına aylık sınır, sınıra yaklaşınca uyarı.</li>
+  <li><b>Birikim hedefleri</b> — tatil, acil durum fonu ya da yeni bilgisayar için ilerlemeni izle.</li>
+  <li><b>Düzenli ödemeler</b> — kira, abonelik ve faturalar; istersen hatırlatıcıyla.</li>
+  <li><b>Hesaplar ve net varlık</b> — nakit, banka ve kart hesapları, transferler ve borçlar.</li>
+  <li><b>Raporlar</b> — yıllık ve aylık eğilimler, kategori değişimleri, PDF dışa aktarma.</li>
+  <li><b>Çoklu para birimi</b> — tutarlar işlem tarihindeki Avrupa Merkez Bankası kuruyla çevrilir.</li>
+  <li><b>Yedek ve CSV</b> — kendi iCloud Drive / Google Drive'ına yedek, CSV içe ve dışa aktarma.</li>
+  <li>Koyu tema ve 27 dil.</li>
+</ul>
+
+<h2 data-l="en">Screenshots</h2><h2 data-l="tr" hidden>Ekran görüntüleri</h2>
+<ul class="shots" id="shots"></ul>
+
+<h2 data-l="en">Private by design</h2><h2 data-l="tr" hidden>Gizlilik öncelikli</h2>
+<p data-l="en">No account, no ads, no tracking. Your transactions stay on your device, protected by an optional 4-digit passcode with Face ID / Touch ID. Privacy mode hides amounts on screen.</p>
+<p data-l="tr" hidden>Hesap yok, reklam yok, takip yok. İşlemlerin cihazında kalır; isteğe bağlı 4 haneli şifre ve Face ID / Touch ID ile korunur. Gizlilik modu tutarları ekranda gizler.</p>
+
 <ul>
-  <li><a href="privacy.html">Privacy Policy</a> · <a href="privacy-tr.html" hreflang="tr">Gizlilik Politikası</a></li>
-  <li><a href="support.html">Support</a></li>
+  <li><a href="privacy.html" data-l="en">Privacy Policy</a><a href="privacy-tr.html" data-l="tr" hidden>Gizlilik Politikası</a></li>
+  <li><a href="support.html"><span data-l="en">Support</span><span data-l="tr" hidden>Destek</span></a></li>
 </ul>
 <footer>© 2026 Walletude</footer>
 </main>
+<script>
+(function () {
+  var shots = [
+    ["01-home", "Home", "Ana sayfa"], ["02-expenses", "Expenses", "Giderler"],
+    ["03-budgets", "Budgets", "Bütçeler"], ["04-savings", "Savings", "Birikim"],
+    ["05-reports", "Reports", "Raporlar"], ["06-accounts", "Accounts", "Hesaplar"]
+  ];
+  function saved() { try { return localStorage.getItem("lang"); } catch (e) { return null; } }
+  function pick() {
+    var q = /[?&]lang=(en|tr)/.exec(location.search);
+    return (q && q[1]) || saved() || ((navigator.language || "").slice(0, 2) === "tr" ? "tr" : "en");
+  }
+  function apply(l) {
+    document.documentElement.lang = l;
+    document.querySelectorAll("[data-l]").forEach(function (e) { e.hidden = e.getAttribute("data-l") !== l; });
+    document.querySelectorAll("[data-set]").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.set === l); });
+    var v = document.getElementById("vid"), t = v.currentTime, paused = v.paused;
+    if (v.getAttribute("src") !== "video/preview-" + l + ".mp4") {
+      v.poster = "video/poster-" + l + ".jpg"; v.src = "video/preview-" + l + ".mp4";
+      v.setAttribute("aria-label", l === "tr" ? "Walletude uygulama tanıtım videosu" : "Walletude app preview");
+    }
+    document.getElementById("shots").innerHTML = shots.map(function (s) {
+      var c = l === "tr" ? s[2] : s[1];
+      return '<li><figure><img loading="lazy" src="img/' + l + "/" + s[0] + '.jpg" alt="Walletude — ' + c + '"><figcaption>' + c + "</figcaption></figure></li>";
+    }).join("");
+    try { localStorage.setItem("lang", l); } catch (e) {}
+  }
+  document.querySelectorAll("[data-set]").forEach(function (b) { b.addEventListener("click", function () { apply(b.dataset.set); }); });
+  apply(pick());
+})();
+</script>
 </body>
 </html>
